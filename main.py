@@ -5,7 +5,7 @@ while True:
 
     ret, image = cap.read()
 
-    face_detect = cv2.CascadeClassifier(r'scr\haarcascade_frontalface_alt.xml')
+    face_detect = cv2.CascadeClassifier(r'src\haarcascade_frontalface_alt.xml')
     face_data = face_detect.detectMultiScale(image, 1.1, 5)
 
     # Draw rectangle around the faces which is our region of interest (ROI)
